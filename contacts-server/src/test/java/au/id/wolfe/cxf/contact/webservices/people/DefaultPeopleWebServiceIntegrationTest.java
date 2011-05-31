@@ -14,7 +14,7 @@ import static org.junit.Assert.assertNotNull;
 /**
  *
  */
-public class DefaultPeopleWebServiceTest {
+public class DefaultPeopleWebServiceIntegrationTest {
 
     PeopleWebService client;
 
@@ -28,7 +28,7 @@ public class DefaultPeopleWebServiceTest {
 
         factory.setServiceClass(PeopleWebService.class);
 
-        factory.setAddress("http://localhost:8080/services/PeopleService");
+        factory.setAddress("http://localhost:9080/services/peopleService");
 
         client = (PeopleWebService) factory.create();
     }

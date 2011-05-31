@@ -1,8 +1,11 @@
 package au.id.wolfe.cxf.contact.webservices.people;
 
+import javax.xml.ws.WebFault;
+
 /**
  *
  */
+@WebFault(name = "PeopleServiceError")
 public class PeopleServiceException extends Exception{
 
     public PeopleServiceException() {
